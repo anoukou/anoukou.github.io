@@ -3,7 +3,16 @@
     overflow-x: hidden;
     overflow-y: hidden;background:#2d2d2d;verticaly-align:middle
 "><head>
-    
+<Style>
+    body {
+  counter-reset: section;
+}
+
+Img::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+</Style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darja Abdirova</title></head><body>
 <center>
