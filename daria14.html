@@ -15,7 +15,18 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <script type="text/javascript" src="https://cdn.ywxi.net/static/jquery/1.12.4/jquery-1.12.4.min.js?2"></script>
 
-   
+   <Style>
+
+body {
+  counter-reset: section;
+}
+
+Image::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+
+</Style>
 
 </head><body style="backfground:linear-gradient(135deg, orange, orange 60%, cyan);margin: auto; min-width: 300px; padding-top: 
 
