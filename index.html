@@ -7,8 +7,8 @@
     body {
   counter-reset: section;
 }
-img{display:none}
-Img::before {
+img{display:block}
+img::before {
   counter-increment: section;
   content: "Section " counter(section) ": ";
 }
